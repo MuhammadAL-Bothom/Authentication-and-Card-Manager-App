@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".card_info"
+    android:id="@+id/main">
+
+    <TextView
+        android:id="@+id/textCardInfo"
+        android:text="معلومات البطاقة"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"/>
+
+    <!-- ✅ صورة البطاقة -->
+    <ImageView
+        android:id="@+id/imageBankLogo"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editAmount"
+        android:hint="أدخل مبلغ الخصم"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:text="تأكيد الخصم"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
